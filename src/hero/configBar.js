@@ -13,11 +13,11 @@ export function configBar(parentElement, todoList, todosConfig) {
     <div class="flex space-x-4" id="buttonGroup"></div>
   `
   const buttonGroup = document.getElementById("buttonGroup");
-  buttonImg(buttonGroup, "/time.svg", () => {
+  buttonImg(buttonGroup, "./time.svg", () => {
     todosConfig.isCountDown = !todosConfig.isCountDown
     sortTodos(todoList, todosConfig)
   })
-  buttonImg(buttonGroup, "/sort.svg", () => {
+  buttonImg(buttonGroup, "./sort.svg", () => {
     if (todosConfig.sortType === "asc") {
       todosConfig.sortType = "desc"
       todosConfig.sortMethod = (a, b) => b.deadline - a.deadline
