@@ -6,6 +6,7 @@ import { todoElement } from "../../components/todoElement";
    todos.className = "mt-16 lg:mx-64 md:mx-32 mx-8 flex flex-col space-y-8"
    todos.id = "todos"
    for (const todo of todoList) {
+     console.log(todo)
      todo.deadline = new Date(todo.deadline)
      const interval = todoElement(todos, todo, todoList,todosConfig)
      todo.interval = interval
