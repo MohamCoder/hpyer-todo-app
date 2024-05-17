@@ -1,4 +1,2 @@
-# scadjs
-# -hyper-todo
-# -hyper-todo
 # hpyer-todo-app
+to run `npm run dev`
