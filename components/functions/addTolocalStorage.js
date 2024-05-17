@@ -1,4 +1,4 @@
-export function addToLocalStorage(todoList) 
+export function addToLocalStorage(todoList) {
   const todoListCopy = []
   todoList.forEach(todo => {
     const todoCopy = {}
