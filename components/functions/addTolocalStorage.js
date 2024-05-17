@@ -3,5 +3,6 @@ export function addToLocalStorage(todoList) {
   todoListCopy.forEach(todo => {
     todo.deadline = new Date(todo.deadline).toLocaleDateString()
   })
+  console.log(todoListCopy)
   localStorage.setItem("todoList", JSON.stringify(todoListCopy))
 }
