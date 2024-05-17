@@ -19,7 +19,7 @@ export function addTodo(screenId, todoList, todosConfig) {
   const interval = todoElement(todos, todo, todoList, todosConfig)
   todo.interval = interval
   todoList.push(todo)
-  localStorage.setItem("todoList", JSON.stringify(todoList))
+  addToLocalStorage(todoList)
 
   console.log(todosConfig)
   if (todosConfig.editing) {
