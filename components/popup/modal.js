@@ -25,7 +25,7 @@ export function modal(wrapper, screenId, todoList, todosConfig) {
     <div class="w-full flex items-center justify-end mt-8" id="buttonWrapper"></div>
 `
   const title = document.getElementById("title")
-  borderButton(title, "/close.svg", () => {
+  borderButton(title, "./close.svg", () => {
     const screen = document.getElementById(screenId)
     screen.className = "hidden"
   })
